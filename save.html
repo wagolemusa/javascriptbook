@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>save</title>
+</head>
+<body>
+<!--  save words -->
+<form action="index.html">
+Value: <input type="" name="value">
+<button type="submit">Save</button>
+
+</form>
+<br/>
+<script>
+	
+// saving words
+var form = document.querySelector("form");
+form.addEventListener("submit", function(event){
+	document.write("Saving value", form.elements.value.value);
+	event.preventDefault();
+});
+</script>
+
+
+
+</body>
+</html>

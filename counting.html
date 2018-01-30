@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>counting</title>
+</head>
+<body>
+<!-- counter the length -->
+<input type="text" name="value"> length: <span id="length">0</span>
+
+<script>
+
+  var text = document.querySelector("input");
+  var output = document.querySelector("#length");
+  text.addEventListener("input", function() {
+    output.textContent = text.value.length;
+  });
+</script>
+
+<br/><br/>
+</body>
+</html>
